@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+@media (prefers-color-scheme: Dark) {
+  body {
+    background-color: rgb(31, 31, 31);
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 115, 246);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgb(0, 115, 246);
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: whitesmoke;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 120px;
+  gap: 20px;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 115, 246);
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: whitesmoke;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1%;
+  gap: 20px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 115, 246);
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: whitesmoke;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1%;
+  gap: 20px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(51, 49, 49);
+  color: white;
+  margin-top: 5%;
+}
+.contactme {
+  justify-items: center;
+  font-size: 15px;
+  padding: 20px;
+}
+.orderList {
+  list-style-type: none;
+  justify-items: center;
+  padding: 20px;
+}
+.orderList li {
+  padding-top: 10px;
+}
+@media screen and (min-width: 600px) {
+  .aboutme p {
+    text-align: justify;
+    text-align: center;
+  }
+}
