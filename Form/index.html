@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Index.css" />
     <title>Form</title>
-</head>
-<body>
-    <div>
-        <h1>Najeeb ur Rehman</h1>
-        <img src="https://img.freepik.com/free-vector/male-photographer-with-camera-hand-drawn-sketch-vector_460848-14670.jpg?ga=GA1.1.873180799.1711622817&semt=ais_hybrid" alt="pic" width="200px" height="200px">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam similique laudantium itaque optio corporis dolores ex? Magni, ipsa voluptatem iure voluptas nesciunt minus dolores provident commodi excepturi debitis assumenda officiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, in, perferendis quod eos dolore assumenda similique neque beatae nemo soluta blanditiis aspernatur, exercitationem quia incidunt! Ducimus molestias itaque dolore necessitatibus placeat ratione non qui, quos voluptatibus tempora reprehenderit ullam in dolor ipsa eligendi temporibus sint sed sunt minus ipsam animi.
-            <a href="https://google.com">Google.com</a>
-        </p>
-        <ol>
-            <li>Order List 1</li>
-            <li>Order List 2</li>
-            <ol type="a">
-                <li>Order List 1.1</li>
-                <li>Order List 1.2</li>
-            </ol>
-            <li>Order List 3</li>
-        </ol>
-        
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login Form</h1>
+      <form class="form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="fathername">Father Name</label>
+          <input
+            type="text"
+            name="fathername"
+            id="fathername"
+            placeholder="Father Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group-gen-count">
+          <div class="form-group-gender">
+            <label for="gender" class="labelhead">Gender</label>
+            <input type="radio" id="male" name="gendermale" value="Male" />
+            <label for="male" style="font-size: large">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="genderfemale"
+              value="Female"
+            />
+            <label for="female" style="font-size: large">Female</label>
+          </div>
+          <div class="form-group-countries">
+            <label for="country" class="labelhead">Country</label>
+            <select name="ountries" id="ountries">
+              <option value="select">Select</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="albania">Albania</option>
+              <option value="algeria">Algeria</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="belgium">Belgium</option>
+              <option value="bhutan">Bhutan</option>
+              <option value="canada">Canada</option>
+              <option value="denmark">Denmark</option>
+              <option value="egypt">Egypt</option>
+              <option value="finland">Finland</option>
+              <option value="germany">Germany</option>
+              <option value="india">India</option>
+              <option value="pakistan">Pakistan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Confirm Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="button">LogIn</button>
+        <div>
+          <a href="/Form/Admin.html" class="adminlink">Admin Login.</a>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
